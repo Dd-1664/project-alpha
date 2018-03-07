@@ -2,12 +2,23 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Template Project{% endblock %}</title>
+        {% block stylesheets %}
+
+            {# BOOTSTRAP ALTERNATIVE #}
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+            {# SCSS #}
+            <link rel="stylesheet" type="text/css" href="{{ asset("build/css/style.css") }}">
+            {# FONT AWESOME #}
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+    <main class="container-fluid content">
         {% block body %}{% endblock %}
+    </main>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

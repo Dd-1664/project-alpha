@@ -1,4 +1,4 @@
-FROM injah/php7.1custom
+FROM injah/php7.1:custom
 
 MAINTAINER Dd-1664
 
@@ -17,13 +17,7 @@ COPY docker/auth.json /home/.composer/
 RUN /bin/bash -c 'composer install --working-dir=/var/www/html/ --no-scripts --no-suggest --no-autoloader'
 
 
-# TODO: REMOVE CRONS
-# handle cron-file
-COPY docker/crons.conf /etc/cron.d/cron
-RUN /bin/bash -c 'chmod 0644 /etc/cron.d/cron && crontab /etc/cron.d/cron'
-
 # install node dependencies with npm..
-
 COPY package.json /var/www/html/
 RUN /bin/bash -c 'cd /var/www/html/ && npm install'
 

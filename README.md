@@ -12,10 +12,7 @@ Pour faire tourner le projet sous docker en local, il faut:
  - Une fois que le docker est build, il faut générer le fichier CSS avec la commande `./node_modules/.bin/encore production`
 
 l'application est accessible à l'adresse:
-
 http://localhost:8080/app_dev.php/
-ou
-http://localhost:8080/web/app_dev.php/
 
 
 

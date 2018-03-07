@@ -15,24 +15,11 @@ Encore
     .addEntry('js/app', ['babel-polyfill',  'bootstrap', 'select2'])
     // allow sass/scss files to be processed
     .enableSassLoader().autoProvidejQuery()
-//Ici on ajoute un thème si il y en a un nouveau
-    .addStyleEntry('css/dashboard', './assets/scss/dashboard.scss')
+
+    //Ici on ajoute un thème si il y en a un nouveau
+    .addStyleEntry('css/style', './assets/scss/style.scss')
     .enableReactPreset()
-    .enableSourceMaps(!Encore.isProduction())
+    .enableSourceMaps(!Encore.isProduction());
 
-// create hashed filenames (e.g. app.abc123.css)
-// .enableVersioning()
-;
-/*
-todo enable cdn
-if (Encore.isProduction()) {
-    Encore.setPublicPath('https://my-cool-app.com.global.prod.fastly.net');
-
-    // guarantee that the keys in manifest.json are *still*
-    // prefixed with build/
-    // (e.g. "build/dashboard.js": "https://my-cool-app.com.global.prod.fastly.net/dashboard.js")
-    Encore.setManifestKeyPrefix('build/');
-}
-*/
 // export the final configuration
 module.exports = Encore.getWebpackConfig();

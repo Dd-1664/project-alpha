@@ -1,7 +1,7 @@
 {
-    "name": "david/my_project",
+    "name": "david/base_project",
     "license": "proprietary",
-    "type": "portfolio",
+    "type": "project",
     "autoload": {
         "psr-4": {
             "AppBundle\\": "src/AppBundle"

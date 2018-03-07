@@ -8,6 +8,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "babel-runtime": "^6.26.0",
+    "blueimp-file-upload": "~9.11.2",
     "bootstrap": "^3.3.7",
     "bootstrap-sass": "^3.3.7",
     "jquery": "^3.3.1",

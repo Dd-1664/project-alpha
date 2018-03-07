@@ -6,8 +6,8 @@
 parameters:
 
     # Globals
-    secret: da87f90077450a7c11f911ec56
-    locale: 'fr'
+    secret: dda87f90077450a7c11f911ec56
+    locale: 'en'
 
 
     # Database

@@ -20,11 +20,11 @@ http://localhost:8080/app_dev.php/
 
 
  CMD :
- docker build -t [IMAGE TAG] . && docker run
+ docker build -t [TAG] . && docker run
  -p 8888:443 -p 8080:80 (pas besoin de bind 443)
  -v [HOST PATH]:/var/www/html
  --env APACHE_USER_ID=1000
- --name [CONTAINER NAME] [IMAGE TAG (optionnal)]
+ --name [NAME]
 
 
 

@@ -5,3 +5,4 @@
 .idea
 .~*
 .git
+phpunit.xml.dist

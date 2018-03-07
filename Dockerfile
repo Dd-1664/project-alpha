@@ -1,6 +1,6 @@
-FROM injah/php7.1:custom
+FROM injah/php7.1:latest
 
-MAINTAINER Dd-1664
+MAINTAINER injah
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -29,7 +29,7 @@ COPY docker/ssl/ssl.key /etc/apache2/certs/
 # Copy all the source (This will invalidate cache)
 COPY . /var/www/html/.
 
-RUN /bin/bash -c 'chmod +x /var/www/html/docker/*.sh'
+RUN /bin/bash -c 'chmod +x /var/www/html/docker/run-symfony.sh'
 
 # remove pre-existing cache (cache folder is recreated in script run-symfony)
 RUN /bin/bash -c 'cd /var/www/html/ && rm -rf var/cache/'

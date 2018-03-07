@@ -31,15 +31,17 @@ http://localhost:8080/app_dev.php/
 
 
 
+# Lancer Docker en ligne de commande
+CMD :
+ docker run [NAME]:[TAG]
+
+
 EXEMPLE
 ========
 
 CMD :
-`docker build -t dashboard-analytics . && docker run
--p 8888:443 -p 8080:80
--v /home/daviddabo/PhpstormProjects/GM-dashboard-Analytics:/var/www/html
---env APACHE_USER_ID=1000
---name dashboard-analytics dashboard-analytics`
+docker build -t portfolio . && docker run -p 8080:80 -v /c/Users/david/PhpstormProjects/project-alpha /var/www/html --env APACHE_USER_ID=1000 --name portfolio
+docker run portfolio:latest
 
 
 *********************************************************

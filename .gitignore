@@ -16,5 +16,13 @@
 /vendor/
 /web/bundles/
 .idea
-!.idea
 /.idea
+!.idea
+/.idea/
+/vendor/
+/nodes
+/web/bundles/
+/web/build
+/node_modules/
+/node_modules
+!node_modules

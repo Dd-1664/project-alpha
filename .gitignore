@@ -23,6 +23,6 @@
 /nodes
 /web/bundles/
 /web/build
-/node_modules/
+!/node_modules
+/node_modules/*
 /node_modules
-!node_modules

@@ -1,0 +1,7 @@
+/var/cache/*
+/var/logs/*
+/var/sessions/*
+/web/bundles/*
+.idea
+.~*
+.git

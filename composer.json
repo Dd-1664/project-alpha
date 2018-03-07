@@ -1,7 +1,7 @@
 {
     "name": "david/my_project",
     "license": "proprietary",
-    "type": "project",
+    "type": "portfolio",
     "autoload": {
         "psr-4": {
             "AppBundle\\": "src/AppBundle"
@@ -11,16 +11,8 @@
             "app/AppCache.php"
         ]
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        },
-        "files": [
-            "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
-        ]
-    },
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=7.1",
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/orm": "^2.5",
         "incenteev/composer-parameter-handler": "^2.0",
@@ -60,7 +52,6 @@
         "symfony-bin-dir": "bin",
         "symfony-var-dir": "var",
         "symfony-web-dir": "web",
-        "symfony-tests-dir": "tests",
         "symfony-assets-install": "relative",
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"

@@ -40,7 +40,7 @@ EXEMPLE
 ========
 
 CMD :
-docker build -t portfolio . && docker run -p 8080:80 -v /c/Users/david/PhpstormProjects/project-alpha /var/www/html --env APACHE_USER_ID=1000 --name portfolio
+docker build -t portfolio . && docker run -p 8080:80 -v /c/Users/david/PhpstormProjects/project-alpha:/var/www/html --env APACHE_USER_ID=1000 --name portfolio
 docker run portfolio:latest
 
 

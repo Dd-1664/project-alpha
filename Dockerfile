@@ -1,4 +1,4 @@
-FROM injah/php7.1:latest
+FROM injah/php7.1:custom
 
 MAINTAINER injah
 
@@ -20,7 +20,7 @@ RUN /bin/bash -c 'cd /var/www/html/ && npm install'
 # Copy all the source (This will invalidate cache)
 COPY . /var/www/html/.
 
-RUN /bin/bash -c 'chmod +x /var/www/html/docker/run-symfony.sh'
+RUN /bin/bash -c 'chmod +x /var/www/run-symfony.sh'
 
 # remove pre-existing cache (cache folder is recreated in script run-symfony)
 RUN /bin/bash -c 'cd /var/www/html/ && rm -rf var/cache/'

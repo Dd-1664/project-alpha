@@ -23,27 +23,51 @@ http://localhost:8080/app_dev.php/
 
 
  CMD :
- docker build -t [TAG] . && docker run
- -p 8888:443 -p 8080:80 (pas besoin de bind 443)
- -v [HOST PATH]:/var/www/html
- --env APACHE_USER_ID=1000
- --name [NAME]
-
+ docker build -t [NAME:TAG]
 
 
 # Lancer Docker en ligne de commande
 CMD :
- docker run [NAME]:[TAG]
+
+
+ docker run
+ -p 8080:80
+ -v [HOST PATH]:/var/www/html
+ --env APACHE_USER_ID=1000
+ --name [NAME:TAG]
+
+
 
 
 EXEMPLE
 ========
 
 CMD :
-docker build -t portfolio . && docker run -p 8080:80 -v /c/Users/david/PhpstormProjects/project-alpha:/var/www/html --env APACHE_USER_ID=1000 --name portfolio
-docker run portfolio:latest
+    docker build -t portfolio
+    docker run -p 8080:80 -v /c/Users/david/PhpstormProjects/project-alpha:/var/www/html --env APACHE_USER_ID=1000 --name portfolio 
+    docker exec -it portfolio bash
+    cd /var/www/html
+    composer install
+    npm install
+    ./node_modules/.bin/encore production
+    
+    
+    # Dev installation
+Run your docker container.
 
+- Build: `docker build -t portfolio .`
+- Run: `docker run -p 8080:80 -p 8888:443 -v $(pwd):/var/www/html --env APACHE_USER_ID=$(id -u) --name portfolio portfolio` 
+- Access <https://localhost:8888>
 
 *********************************************************
 A Symfony project created on November 20, 2017, 4:36 pm.
 
+
+
+
+- APRES COMPOSER INSTALL DANS DOCKER
+
+Creer dossier toolbox
+mettre les vendor bootstrap
+
+copier le dossier dans vendor

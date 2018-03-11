@@ -1,15 +1,18 @@
-FROM injah/php7.1:custom
+FROM injah/php7.1:v1
 
 MAINTAINER injah
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# composer install
+# First copy composer in docker to install it
 COPY composer.json /var/www/html/
 COPY composer.lock /var/www/html/
+
+# WARNING: GITHUB TOKEN
 COPY docker/auth.json /home/.composer/
 
 # this will only download vendors and be cached on the host
+# TODO: REWORK
 RUN /bin/bash -c 'composer install --working-dir=/var/www/html/ --no-scripts --no-suggest --no-autoloader'
 
 # install node dependencies with npm..
@@ -20,19 +23,24 @@ RUN /bin/bash -c 'cd /var/www/html/ && npm install'
 # Copy all the source (This will invalidate cache)
 COPY . /var/www/html/.
 
-RUN /bin/bash -c 'chmod +x /var/www/run-symfony.sh'
+RUN /bin/bash -c 'chmod +x /var/www/run-symfony.Unix.sh'
 
 # remove pre-existing cache (cache folder is recreated in script run-symfony)
 RUN /bin/bash -c 'cd /var/www/html/ && rm -rf var/cache/'
 
-# Install composer autoloader + run sf scripts if any
+# Install composer autoloader + run Symfony script
+# TODO: REWORK
 RUN /bin/bash -c 'composer install --optimize-autoloader --working-dir=/var/www/html/'
 
-# Encore for production
+# Run Webpack
+# TODO: REWORK (production)
 RUN /bin/bash -c 'cd /var/www/html/ && node_modules/.bin/encore production'
 
+# TODO: REWORK
 RUN /bin/bash -c 'cd /var/www/html/ && php bin/console assets:install && rm -rf var/cache/*'
 
-EXPOSE 80 443
+EXPOSE 80
 
-CMD ["/bin/bash", "-c", "/var/www/run-symfony.sh"]
+LABEL Run Symfony script
+
+CMD ["/bin/bash", "-c", "/var/www/run-symfony.Unix.sh"]

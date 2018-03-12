@@ -28,7 +28,7 @@ RUN /bin/bash -c 'chmod +x /var/www/run-symfony.Unix.sh'
 # remove pre-existing cache (cache folder is recreated in script run-symfony)
 RUN /bin/bash -c 'cd /var/www/html/ && rm -rf var/cache/'
 
-# Install composer autoloader + run Symfony script
+# Install composer autoloader
 # TODO: REWORK
 RUN /bin/bash -c 'composer install --optimize-autoloader --working-dir=/var/www/html/'
 
@@ -41,6 +41,8 @@ RUN /bin/bash -c 'cd /var/www/html/ && php bin/console assets:install && rm -rf 
 
 EXPOSE 80
 
-LABEL Run Symfony script
+# Need this to edit volumes on KiteMatic
+VOLUME /var/www/html
 
+# Run Symfony script
 CMD ["/bin/bash", "-c", "/var/www/run-symfony.Unix.sh"]

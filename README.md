@@ -1,14 +1,21 @@
-Portfolio Project
+CV Project
 =================
 
-Sources:
-<https://github.com/BlackrockDigital/>
-
-
 # TODO:
-CUSTOMIZE
-PACKAGE.JSON IS NOT UP TO DATE, UPDATE
-ADD BUTTON TO SWITCH LANGUAGE (AVP)
+CUSTOMIZE TEMPLATE;
+
+DISPLAY PROFILE IMG;
+* Use CDN for profile img
+
+USE GLITCH EFFECT & OTHER CSS EFFECTS;
+<https://tympanus.net/codrops/>
+
+FIX NAVBAR ON PHONE & TABLET;
+
+ADD BUTTON TO SWITCH LANGUAGE BETWEEN FR & ENG, MAYBE DE;
+<http://avantpremiere.ch/>
+
+PUT ALL TEXTS IN TRANSLATION FILE;
 
 # Lancer Docker 
 Build l'image du projet et utiliser Kitematic (Docker GUI):

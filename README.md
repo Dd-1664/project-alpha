@@ -38,5 +38,4 @@ EXEMPLE DOS
 
 ==============
 
-A Symfony project created on November 20, 2017, 4:36 pm.
-
+A Symfony project created in 2018.

@@ -1,4 +1,4 @@
-FROM injah/php7.1:v1
+FROM injah/php7.1:win
 
 MAINTAINER injah
 
@@ -23,7 +23,7 @@ RUN /bin/bash -c 'cd /var/www/html/ && npm install'
 # Copy all the source (This will invalidate cache)
 COPY . /var/www/html/.
 
-RUN /bin/bash -c 'chmod +x /var/www/run-symfony.Unix.sh'
+RUN /bin/bash -c 'chmod +x /var/www/run-symfony.Win.sh'
 
 # remove pre-existing cache (cache folder is recreated in script run-symfony)
 RUN /bin/bash -c 'cd /var/www/html/ && rm -rf var/cache/'
@@ -45,4 +45,4 @@ EXPOSE 80
 VOLUME /var/www/html
 
 # Run Symfony script
-CMD ["/bin/bash", "-c", "/var/www/run-symfony.Unix.sh"]
+CMD ["/bin/bash", "-c", "/var/www/run-symfony.Win.sh"]

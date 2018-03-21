@@ -1,38 +1,68 @@
-Portfolio Project
+Grayscale Project
 =================
 
-Sources:
-<https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio>
+
+WARNING:
+relaunch `./node_modules/.bin/encore production` in docker
+if front is not loaded
 
 
 # TODO:
-- APRES COMPOSER INSTALL DANS DOCKER
-Creer dossier toolbox
-mettre les vendor bootstrap
-copier le dossier dans vendor
+Make it work with kitematic
 
-# Lancer Docker 
-Build l'image du projet et utiliser Kitematic (Docker GUI):
+Customize template
 
- `docker build -t [NAME:TAG] .`
+Install mysql / phpmyadmin (wamp)
 
-# Lancer Docker en ligne de commande
+Entity photos
+* photos -> slider
+* mainPhotos -> background + G-Map
+
+Admin panel
+* 1 seul login
+* 1 fenetre pour upload des photos
+
+Upload photos (server or CDN)
+<https://www.cloudflare.com/fr/>
+
+Display photos with slider Sly
+<http://darsa.in/sly/>
+
+
+Manage G-Map for photos
+* formulaire pour remplir les champs lat,long.
+* chaque mainPhotos va afficher la location sur la G-Map
+
+
+DOCKER
+======
+
+# Build l'image Docker
+
+ docker build
+ -t [NAME:TAG] .
+
+# Lancer Docker
+
+ docker build
+ -t [NAME:TAG] .
 
  docker run
  -p 8080:80
- -v [HOST PATH]:/var/www/html
- --env APACHE_USER_ID=1000
- --name [NAME] [NAME]
+  -v [HOST-PATH]:/var/www/html
+ --name [IMAGE TAG] [IMAGE ID]
+
+ ou utiliser Kitematic (Docker GUI):
 
 
 EXEMPLE DOS
 ========
 
-* `docker build -t portfolio .`
-* `docker run -p 8080:80 -v $(pwd):/var/www/html --env APACHE_USER_ID=$(id -u) APACHE_USER_GROUP=$(group -g) --name portfolio portfolio` 
-* Access <http://localhost:8080>
+* `docker build -t grayscale .`
+* `docker run -p 8080:80 -v $(pwd):/var/www/html --env APACHE_USER_ID=$(id -u) --name portfolio portfolio`
+* Access <http://localhost:8080/app_dev.php>
 
 ==============
 
-A Symfony project created on November 20, 2017, 4:36 pm.
+A Symfony project created in 2018.
 

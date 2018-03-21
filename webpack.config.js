@@ -18,6 +18,7 @@ Encore
 
     //Ici on ajoute un thème si il y en a un nouveau
     .addStyleEntry('css/style', './assets/scss/style.scss')
+    .addStyleEntry('css/font-awesome', './web/icons/font-awesome/scss/font-awesome.scss')
     .enableReactPreset()
     .enableSourceMaps(!Encore.isProduction());
 

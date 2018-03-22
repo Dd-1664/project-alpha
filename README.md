@@ -2,11 +2,6 @@ Grayscale Project
 =================
 
 
-WARNING:
-relaunch `./node_modules/.bin/encore production` in docker
-if front is not loaded
-
-
 # TODO:
 Make it work with kitematic
 
@@ -28,11 +23,28 @@ Upload photos (server or CDN)
 Display photos with slider Sly
 <http://darsa.in/sly/>
 
-
 Manage G-Map for photos
 * formulaire pour remplir les champs lat,long.
 * chaque mainPhotos va afficher la location sur la G-Map
 
+-----------------------------------------------------------
+
+
+# WARNING:
+relaunch `./node_modules/.bin/encore production` in docker
+if front is not loaded
+
+
+AFTER FIRST INSTALL, RUN:
+
+`composer install`
+`npm install`
+`./node_modules/.bin/encore production`
+
+THEN REBUILD CONTAINER
+
+
+-----------------------------------------------------------
 
 DOCKER
 ======
@@ -62,7 +74,7 @@ EXEMPLE DOS
 * `docker run -p 8080:80 -v $(pwd):/var/www/html --env APACHE_USER_ID=$(id -u) --name portfolio portfolio`
 * Access <http://localhost:8080/app_dev.php>
 
-==============
+-----------------------------------------------------------
 
 A Symfony project created in 2018.
 

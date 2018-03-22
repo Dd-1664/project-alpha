@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>{% block title %}My Resume{% endblock %}</title>
-        {% block stylesheets %}
-            {# BOOTSTRAP #}
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-            {# CUSTOM CSS #}
-            <link rel="stylesheet" type="text/css" href="{{ asset("build/css/base.css") }}">
-            {# FONTS CDN #}
-            <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-            {# ICONS #}
-            <link rel="stylesheet" type="text/css" href="{{ asset("build/css/devicons.css") }}">
-            <link rel="stylesheet" type="text/css" href="{{ asset("build/css/simple-line-icons.css") }}">
-            <link rel="stylesheet" type="text/css" href="{{ asset("build/css/font-awesome.css") }}">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Resume">
+    <meta name="author" content="injah">
+    <title>{% block title %}Resume Project{% endblock %}</title>
+    {% block stylesheets %}
+        {# BOOTSTRAP #}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        {# CUSTOM CSS #}
+        <link rel="stylesheet" type="text/css" href="{{ asset("build/css/base.css") }}">
+        {# FONTS CDN #}
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+        {# ICONS #}
+        <link rel="stylesheet" type="text/css" href="{{ asset("build/css/devicons.css") }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset("build/css/simple-line-icons.css") }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset("build/css/font-awesome.css") }}">
 
-        {% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body id="page-top">
-        {% block body %}{% endblock %}
-        {% block javascripts %}
-            {# BOOTSTRAP #}
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-            {# JQUERY #}
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-            {# FONT AWESOME #}
-            {# CUSTOM JS #}
-            <script src="{{ asset("build/js/app.js") }}"></script>
-        {% endblock %}
-    </body>
+    {% endblock %}
+
+    {# TODO: CHANGE FAVICON #}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body id="page-top">
+{% block body %}
+{% endblock %}
+
+{% block javascripts %}
+    {# BOOTSTRAP #}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    {# JQUERY #}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    {# FONT AWESOME #}
+    {# CUSTOM JS #}
+    <script src="{{ asset("build/js/app.js") }}"></script>
+{% endblock %}
+</body>
 </html>

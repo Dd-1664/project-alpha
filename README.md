@@ -29,6 +29,12 @@ Build l'image du projet et utiliser Kitematic (Docker GUI):
  --name [NAME] [NAME]
 
 
+# COMMAND:
+`composer install`
+`npm install install`
+`node_modules/.bin/encore production`
+
+
 EXEMPLE DOS
 ========
 

@@ -7,6 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
+//    TODO: SET DEFAULT URL
     /**
      * @Route("/{_locale}/", name="homepage")
      */

@@ -2,9 +2,15 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
     <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
         <body>
-            <trans-unit id="a8f95cef4e6fe7ea452b0bd79a6f50e1">
+            <trans-unit id="1">
                 <source>text.resume</source>
-                <target>Lorem Ipsum.
+                <target>Autodidacte, Franc, Réfléchi
+                </target>
+            </trans-unit>
+
+            <trans-unit id="2">
+                <source>dev.web</source>
+                <target>Développeur Web
                 </target>
             </trans-unit>
         </body>

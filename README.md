@@ -1,5 +1,8 @@
 CV Project
-=================
+==========
+
+# CREATE NEW REPOSITORY ON GITHUB FOR RESUME
+
 
 # TODO:
 CUSTOMIZE TEMPLATE;

@@ -2,11 +2,15 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
     <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
         <body>
-            <trans-unit id="a8f95cef4e6fe7ea452b0bd79a6f50e1">
+            <trans-unit id="1">
                 <source>text.resume</source>
-                <target>I am experienced in leveraging agile frameworks to provide a robust synopsis
-                        for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking
-                        to further the overall value proposition.
+                <target>Self-taught, Frank, Thoughtful
+                </target>
+            </trans-unit>
+
+            <trans-unit id="2">
+                <source>dev.web</source>
+                <target>Web Developer
                 </target>
             </trans-unit>
         </body>

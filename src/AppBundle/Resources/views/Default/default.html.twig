@@ -1,18 +1,26 @@
 {% extends 'base.html.twig' %}
 {% block body %}
+
+    {# DIPLAY DEFAULT LANGUAGE IN URL WHEN LANDING ON PAGE #}
+    {#{% if app.request.locale is not defined or app.request.locale == '' %}
+        {% set app.request.locale == 'en' %}
+    {% else %}
+        {% set app.request.locale == 'fr' %}
+    {% endif %}#}
+
     {# NAVIGATION #}
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
 
         {# TODO: STYLE SWITCH BTN #}
         {% if app.request.locale == 'fr' %}
             <span class="switch-language">
-                    <a href="#">FR</a> /
-                    <a href="{{ app.request.baseUrl }}/en/">EN</a>
+                    <a class="btn" href="#">FR</a> /
+                    <a class="btn" href="{{ app.request.baseUrl }}/en/">EN</a>
                 </span>
         {% else %}
             <span class="switch-language">
-                    <a href="{{ app.request.baseUrl }}/fr/">FR</a> /
-                    <a href="#">EN</a>
+                    <a class="btn" href="{{ app.request.baseUrl }}/fr/">FR</a> /
+                    <a class="btn" href="#">EN</a>
                 </span>
         {% endif %}
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -67,7 +75,7 @@
                 {# INFOS #}
                 <div class="subheading mb-5">
                     Avenue du temple 24D<br>
-                    1012 Lausanne - Vaud<br>
+                    1012 Lausanne - Vaud - {{ "ch"|trans }}<br>
                     (+41) 79 729 30 76<br>
                     <a href="mailto:name@email.com">david.dabo.pro@gmail.com</a><br>
                 </div>
@@ -77,9 +85,29 @@
 
                 {# LANGUAGE #}
                 <p class="mb-5">
-                    <img src="{{ asset("img/de.png") }}">
-                    <img src="{{ asset("img/en.png") }}">
-                    <img src="{{ asset("img/fr.png") }}">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="{{ asset("img/fr.png") }}"><br>
+                        <i class="fa fa-star ranking"></i>
+                        <i class="fa fa-star ranking"></i>
+                        <i class="fa fa-star ranking"></i>
+
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="{{ asset("img/en.png") }}"><br>
+                        <i class="fa fa-star ranking"></i>
+                        <i class="fa fa-star ranking"></i>
+
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="{{ asset("img/de.png") }}"><br>
+                        <i class="fa fa-star ranking"></i>
+                    </div>
+                </div>
                 </p>
 
                 {# FACEBOOK #}
@@ -134,10 +162,7 @@
                     <div class="resume-content mr-auto">
                         <h3 class="mb-0">{{ "dev.web"|trans }}</h3>
                         <div class="subheading mb-3">GeneralMedia SA, Lausanne.</div>
-                        <p>Bring to the table win-win survival strategies to ensure proactive domination.
-                            At the end of the day, going forward, a new normal that has evolved from generation X
-                            is on the runway heading towards a streamlined cloud solution. User generated content
-                            in real-time will have multiple touchpoints for offshoring.</p>
+                        <p>{{ "1year.gm"|trans }}</p>
                     </div>
                     <div class="resume-date text-md-right">
                         <span class="text-primary">2017 - 2018</span>
@@ -148,43 +173,12 @@
                     <div class="resume-content mr-auto">
                         <h3 class="mb-0">{{ "supp.tech"|trans }}</h3>
                         <div class="subheading mb-3">VTX Télécom SA, Lausanne.</div>
-                        <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.
-                            Override the digital divide with additional clickthroughs from DevOps. Nanotechnology
-                            immersion along the information highway will close the loop on focusing solely
-                            on the bottom line.</p>
+                        <p>{{ "1year.vtx"|trans }}</p>
                     </div>
                     <div class="resume-date text-md-right">
                         <span class="text-primary">2017 - 2016</span>
                     </div>
                 </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Junior Web Designer</h3>
-                        <div class="subheading mb-3">Shout! Media Productions</div>
-                        <p>Podcasting operational change management inside of workflows to establish a framework.
-                            Taking seamless key performance indicators offline to maximise the long tail.
-                            Keeping your eye on the ball while performing a deep dive on the start-up mentality
-                            to derive convergence on cross-platform integration.</p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">July 2010 - December 2011</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Web Design Intern</h3>
-                        <div class="subheading mb-3">Shout! Media Productions</div>
-                        <p>Collaboratively administrate empowered markets via plug-and-play networks.
-                            Dynamically procrastinate B2C users after installed base benefits.
-                            Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">September 2008 - June 2010</span>
-                    </div>
-                </div>
-
             </div>
 
         </section>
@@ -223,10 +217,9 @@
             <div class="my-auto">
                 <h2 class="mb-5">Skills</h2>
 
-                {# TODO: CREATE 2 CATEGORIES (PROG & TOOLS) #}
                 {# TODO: maybe include ranking stars #}
 
-                <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+                <div class="subheading mb-3">Programming Languages &amp; CMS</div>
                 <ul class="list-inline list-icons">
                     <li class="list-inline-item">
                         <i class="devicons devicons-html5"></i>
@@ -240,17 +233,11 @@
                     <li class="list-inline-item">
                         <i class="devicons devicons-javascript"></i>
                     </li>
-                    {#<li class="list-inline-item">#}
-                        {#<i class="devicons devicons-jquery"></i>#}
-                    {#</li>#}
-                    {#<li class="list-inline-item">#}
-                        {#<i class="devicons devicons-sass"></i>#}
-                    {#</li>#}
-                    {#<li class="list-inline-item">#}
-                        {#<i class="devicons devicons-less"></i>#}
-                    {#</li>#}
                     <li class="list-inline-item">
-                        <i class="devicons devicons-bootstrap"></i>
+                        <i class="devicons devicons-jquery"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicons devicons-sass"></i>
                     </li>
                     <li class="list-inline-item">
                         <i class="devicons devicons-wordpress"></i>
@@ -258,11 +245,18 @@
                     <li class="list-inline-item">
                         <i class="devicons devicons-drupal"></i>
                     </li>
-                    <li class="list-inline-item">
-                        <i class="devicons devicons-grunt"></i>
-                    </li>
+                </ul>
+
+                <div class="subheading mb-3">Frameworks and Tools</div>
+                <ul class="list-inline list-icons">
                     <li class="list-inline-item">
                         <i class="devicons devicons-symfony"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicons devicons-bootstrap"></i>
+                    </li>
+                         <li class="list-inline-item">
+                        <i class="devicons devicons-grunt"></i>
                     </li>
                     <li class="list-inline-item">
                         <i class="devicons devicons-npm"></i>
@@ -289,7 +283,7 @@
                     </li>
                     <li>
                         <i class="fa-li fa fa-check"></i>
-                        Cross Browser Testing &amp; Debugging
+                        Cross Browser Testing  Debugging
                     </li>
                     <li>
                         <i class="fa-li fa fa-check"></i>
@@ -297,7 +291,7 @@
                     </li>
                     <li>
                         <i class="fa-li fa fa-check"></i>
-                        Agile Development &amp; Scrum
+                        Agile Development  Scrum
                     </li>
                 </ul>
             </div>

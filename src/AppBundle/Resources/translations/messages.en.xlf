@@ -13,6 +13,32 @@
                 <target>Web Developer
                 </target>
             </trans-unit>
+
+            <trans-unit id="3">
+                <source>supp.tech</source>
+                <target>Technical Support And Network
+                </target>
+            </trans-unit>
+
+            <trans-unit id="4">
+                <source>1year.gm</source>
+                <target>1 year as a web application developer and integrator web frontend and backend under Symfony.
+                        Also in charge of the helpdesk part and Actvie Directory management.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="5">
+                <source>1year.vtx</source>
+                <target>1 year as support Technical member in charge of helpdesk,
+                        hotline and internal network issues.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="6">
+                <source>ch</source>
+                <target>Switzerland
+                </target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

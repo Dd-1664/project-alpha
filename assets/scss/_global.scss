@@ -1,12 +1,17 @@
 // Global styling for this template
 
+// TODO: TEST OTHER BACKGROUND FROM <https://www.toptal.com/designers/subtlepatterns>
+// TODO: TEST OTHER FONTS FROM GOOGLE FONTS
+
 body {
   @include body-font;
   padding-top: 54px;
   color: $gray-600;
+  background-image: url('../../web/img/back.png') !important;
 }
 @media (min-width: 992px) {
   body {
+    background-image: url('../../web/img/back.png') !important;
     padding-top: 0;
     padding-left: $sidebar-base-width;
   }
@@ -61,9 +66,25 @@ h2 {
   }
 }
 
-.ranking {
-  color: gold;
-  font-size: 20px;
-  margin: 0 5px;
-  text-align: center;
+span.switch-language {
+  a {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 5px;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .current {
+    padding: 10px;
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 4px;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }

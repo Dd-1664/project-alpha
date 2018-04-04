@@ -40,6 +40,96 @@
                 <target>Suisse
                 </target>
             </trans-unit>
+
+            <trans-unit id="7">
+                <source>infos</source>
+                <target>à Propos
+                </target>
+            </trans-unit>
+
+            <trans-unit id="8">
+                <source>experience</source>
+                <target>expérience
+                </target>
+            </trans-unit>
+
+            <trans-unit id="9">
+                <source>education</source>
+                <target>scolarité
+                </target>
+            </trans-unit>
+
+            <trans-unit id="10">
+                <source>skills</source>
+                <target>compétences
+                </target>
+            </trans-unit>
+
+            <trans-unit id="11">
+                <source>hobby</source>
+                <target>hobbies
+                </target>
+            </trans-unit>
+
+            <trans-unit id="12">
+                <source>school</source>
+                <target>2 ans de cours théoriques suivi au sein de l'École des Arches
+                </target>
+            </trans-unit>
+
+            <trans-unit id="13">
+                <source>school.bis</source>
+                <target>section électronique, lausanne
+                </target>
+            </trans-unit>
+
+            <trans-unit id="14">
+                <source>school.rac</source>
+                <target>raccordement voie secondaire générale, Lausanne
+                </target>
+            </trans-unit>
+
+            <trans-unit id="15">
+                <source>prog.lang</source>
+                <target>langages de programmation &amp; cms
+                </target>
+            </trans-unit>
+
+            <trans-unit id="16">
+                <source>frame.tools</source>
+                <target>frameworks &amp; outils
+                </target>
+            </trans-unit>
+
+            <trans-unit id="17">
+                <source>plus</source>
+                <target>connaissances
+                </target>
+            </trans-unit>
+
+            <trans-unit id="18">
+                <source>win.unix</source>
+                <target>Maîtrise des environnements Linux et Windows
+                </target>
+            </trans-unit>
+
+            <trans-unit id="19">
+                <source>integrator</source>
+                <target>Integration web de maquettes graphiques
+                </target>
+            </trans-unit>
+
+            <trans-unit id="20">
+                <source>responsive</source>
+                <target>Élaboration de design responsive smartphone, tablette et desktop
+                </target>
+            </trans-unit>
+
+            <trans-unit id="21">
+                <source>aws</source>
+                <target>Connaissance de l'infrastructure Amazon Web Services
+                </target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

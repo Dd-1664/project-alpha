@@ -11,10 +11,15 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         {# CUSTOM CSS #}
         <link rel="stylesheet" type="text/css" href="{{ asset("build/css/base.css") }}">
-        {# FONTS CDN #}
+        {# FONTS GOOGLE #}
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+
         {# ICONS #}
         <link rel="stylesheet" type="text/css" href="{{ asset("build/css/devicons.css") }}">
         <link rel="stylesheet" type="text/css" href="{{ asset("build/css/simple-line-icons.css") }}">
@@ -22,7 +27,6 @@
 
     {% endblock %}
 
-    {# TODO: CHANGE FAVICON #}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 </head>
 <body id="page-top">
@@ -30,12 +34,11 @@
 {% endblock %}
 
 {% block javascripts %}
-    {# BOOTSTRAP #}
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     {# JQUERY #}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    {# FONT AWESOME #}
+    {# BOOTSTRAP #}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     {# CUSTOM JS #}
     <script src="{{ asset("build/js/app.js") }}"></script>
 {% endblock %}

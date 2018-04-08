@@ -24,7 +24,6 @@
             </span>
         </a>
 
-        {# TODO: FIX NAVBAR ON MOBILE #}
         {# TODO: FIX SMOOTH SCROLL #}
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,75 +55,82 @@
     <div class="container-fluid p-0">
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
             <div class="my-auto">
-                <h1 class="mb-0">David
-                    <span class="text-primary">Dabo</span>
+                <h1 class="primary-title mb-5">david
+                    <span class="text-primary">dabo</span>
                 </h1>
 
-                <div class="subheading mb-5">
-                    Avenue du temple 24D<br>
-                    1012 Lausanne - Vaud - {{ "ch"|trans }}<br>
+                <div class="primary-info mb-5">
+                    avenue du temple 24d<br>
+                    1012 lausanne - vaud - {{ "ch"|trans }}<br>
                     (+41) 79 729 30 76<br>
-                    <a href="mailto:name@email.com">david.dabo.pro@gmail.com</a><br>
+                    <a href="mailto:david.dabo.pro@gmail.com">david.dabo.pro@gmail.com</a><br>
                 </div>
+
+                <div class="mobile-block-center">
                 <p class="mb-5">
                     {{ "text.resume"|trans }}
                 </p>
 
-                <section class="social-link">
-                    <ul class="list-inline list-social-icons mb-0">
-
-                        {# TWITTER #}
-                        <li class="list-inline-item">
-                            <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-                            </a>
-                        </li>
-
-                        {# LINKEDIN #}
-                        <li class="list-inline-item">
-                            <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-                            </a>
-                        </li>
-
-                        {# GITHUB #}
-                        <li class="list-inline-item">
-                            <a href="https://github.com/Dd-1664" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-
                 {# LANGUAGE #}
                 <p class="mb-5">
-                <div class="row">
-                    <div class="col-md-3" style="text-align: center">
+                <div class="row lang">
+                    <div class="ranking">
                         <img src="{{ asset("img/fr.png") }}"><br>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </div>
 
-                    <div class="col-md-3" style="text-align: center">
+                    <div class="ranking">
                         <img src="{{ asset("img/en.png") }}"><br>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </div>
 
-                    <div class="col-md-3" style="text-align: center">
+                    <div class="ranking">
                         <img src="{{ asset("img/de.png") }}"><br>
                         <i class="fa fa-star"></i>
                     </div>
+                </div>
+                </p>
+
+
+                <section class="social-link">
+                    <p class="mb-5">
+                    <ul class="list-inline list-social-icons mb-0">
+
+                        {# TWITTER #}
+                        <li class="list-inline-item">
+                            <a href="#">
+                            <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                            </a>
+                        </li>
+
+                        {# LINKEDIN #}
+                        <li class="list-inline-item">
+                            <a href="#">
+                            <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                            </a>
+                        </li>
+
+                        {# GITHUB #}
+                        <li class="list-inline-item">
+                            <a href="https://github.com/Dd-1664" target="_blank">
+                            <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+                    </p>
+                </section>
                 </div>
             </div>
         </section>
@@ -141,7 +147,7 @@
                         <p>{{ "1year.gm"|trans }}</p>
                     </div>
                     <div class="resume-date text-md-right">
-                        <span class="text-primary">2017 - 2018</span>
+                        <strong class="text-primary">2017 - 2018</strong>
                     </div>
                 </div>
 
@@ -152,7 +158,7 @@
                         <p>{{ "1year.vtx"|trans }}</p>
                     </div>
                     <div class="resume-date text-md-right">
-                        <span class="text-primary">2017 - 2016</span>
+                        <strong class="text-primary">2017 - 2016</strong>
                     </div>
                 </div>
             </div>
@@ -170,7 +176,7 @@
                         <div>{{ "school"|trans }}</div>
                     </div>
                     <div class="resume-date text-md-right">
-                        <span class="text-primary">2014 - 2016</span>
+                        <strong class="text-primary">2014 - 2016</strong>
                     </div>
                 </div>
 
@@ -182,7 +188,7 @@
 
                     </div>
                     <div class="resume-date text-md-right">
-                        <span class="text-primary">2011 - 2012</span>
+                        <strong class="text-primary">2011 - 2012</strong>
                     </div>
                 </div>
 
@@ -193,7 +199,7 @@
                         <div>blabla</div>
                     </div>
                     <div class="resume-date text-md-right">
-                        <span class="text-primary">2010 - 2011</span>
+                        <strong class="text-primary">2010 - 2011</strong>
                     </div>
                 </div>
 
@@ -283,13 +289,22 @@
             </div>
         </section>
 
-        {# TODO: MAYBE DISPLAY ICONS FOR HOBBY #}
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
             <div class="my-auto">
                 <h2 class="mb-5">{{ "hobby"|trans }}</h2>
-                <p>blabla</p>
-                <p class="mb-0">blabla</p>
+                <p>Je suis principalement interressé par tous ce qui touche de près
+                    ou de loin aux nouvelles technologies, ayant recement decouvert docker,
+                    je me suis lancé dans un projet qui est de faire tourner des sites existants
+                    dans des conteneurs docker.</p>
+
+                <p>Dans mon temps libre, j'affectionne particulierement regarder des films et des series,
+                    jouer à des jeux videos ou encore m'adonner au ski ou au velo.</p>
             </div>
+
+            <a href="#page-top" style="text-align: center; margin: 0 32vw">
+                <i class="fa fa-angle-double-up chevron"></i>
+            </a>
+
         </section>
     </div>
 {% endblock body %}

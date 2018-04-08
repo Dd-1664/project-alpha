@@ -4,7 +4,7 @@
         <body>
             <trans-unit id="1">
                 <source>text.resume</source>
-                <target>Autodidacte, Franc, Réfléchi
+                <target>Autodidacte, Franc et Réfléchi. Je suis un jeune developpeur web principalement sur le framework Symfony. Je souhaite me specialiser dans le frontend design.
                 </target>
             </trans-unit>
 

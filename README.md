@@ -3,29 +3,7 @@ Grayscale Project
 
 
 # TODO:
-Make it work with kitematic
-
 Customize template
-
-Install mysql / phpmyadmin (wamp)
-
-Entity photos
-* photos -> slider
-* mainPhotos -> background + G-Map
-
-Admin panel
-* 1 seul login
-* 1 fenetre pour upload des photos
-
-Upload photos (server or CDN)
-<https://www.cloudflare.com/fr/>
-
-Display photos with slider Sly
-<http://darsa.in/sly/>
-
-Manage G-Map for photos
-* formulaire pour remplir les champs lat,long.
-* chaque mainPhotos va afficher la location sur la G-Map
 
 -----------------------------------------------------------
 

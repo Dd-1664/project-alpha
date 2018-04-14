@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>text.resume</source>
+                <target>Autodidacte, Franc et Réfléchi. Je suis un jeune developpeur web principalement sur le framework Symfony. Je souhaite me specialiser dans le frontend design.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="2">
+                <source>dev.web</source>
+                <target>Développeur Web
+                </target>
+            </trans-unit>
+
+            <trans-unit id="3">
+                <source>supp.tech</source>
+                <target> Support technique et Réseau
+                </target>
+            </trans-unit>
+
+            <trans-unit id="4">
+                <source>1year.gm</source>
+                <target>1 année passé en tant que developeur d'applications web et integrateur web frontend et backend sous Symfony.
+                        Egalement en charge de la partie helpdesk et gestion Actvie Directory.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="5">
+                <source>1year.vtx</source>
+                <target>1 année passé en tant que membre du support technique.
+                        Principalement en charge de la partie Helpdesk,
+                        Hotline technique et gestion des pannes réseau.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="6">
+                <source>ch</source>
+                <target>Suisse
+                </target>
+            </trans-unit>
+
+            <trans-unit id="7">
+                <source>infos</source>
+                <target>à Propos
+                </target>
+            </trans-unit>
+
+            <trans-unit id="8">
+                <source>experience</source>
+                <target>expérience
+                </target>
+            </trans-unit>
+
+            <trans-unit id="9">
+                <source>education</source>
+                <target>scolarité
+                </target>
+            </trans-unit>
+
+            <trans-unit id="10">
+                <source>skills</source>
+                <target>compétences
+                </target>
+            </trans-unit>
+
+            <trans-unit id="11">
+                <source>hobby</source>
+                <target>hobbies
+                </target>
+            </trans-unit>
+
+            <trans-unit id="12">
+                <source>school</source>
+                <target>2 ans de cours théoriques suivi au sein de l'École des Arches
+                </target>
+            </trans-unit>
+
+            <trans-unit id="13">
+                <source>school.bis</source>
+                <target>section électronique, lausanne
+                </target>
+            </trans-unit>
+
+            <trans-unit id="14">
+                <source>school.rac</source>
+                <target>raccordement voie secondaire générale, Lausanne
+                </target>
+            </trans-unit>
+
+            <trans-unit id="15">
+                <source>prog.lang</source>
+                <target>langages de programmation &amp; cms
+                </target>
+            </trans-unit>
+
+            <trans-unit id="16">
+                <source>frame.tools</source>
+                <target>frameworks &amp; outils
+                </target>
+            </trans-unit>
+
+            <trans-unit id="17">
+                <source>plus</source>
+                <target>connaissances
+                </target>
+            </trans-unit>
+
+            <trans-unit id="18">
+                <source>win.unix</source>
+                <target>Maîtrise des environnements Linux et Windows
+                </target>
+            </trans-unit>
+
+            <trans-unit id="19">
+                <source>integrator</source>
+                <target>Integration web de maquettes graphiques
+                </target>
+            </trans-unit>
+
+            <trans-unit id="20">
+                <source>responsive</source>
+                <target>Élaboration de design responsive smartphone, tablette et desktop
+                </target>
+            </trans-unit>
+
+            <trans-unit id="21">
+                <source>aws</source>
+                <target>Connaissance de l'infrastructure Amazon Web Services
+                </target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

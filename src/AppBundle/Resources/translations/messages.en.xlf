@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>text.resume</source>
+                <target>Self-taught, Frank, Thoughtful
+                </target>
+            </trans-unit>
+
+            <trans-unit id="2">
+                <source>dev.web</source>
+                <target>Web Developer
+                </target>
+            </trans-unit>
+
+            <trans-unit id="3">
+                <source>supp.tech</source>
+                <target>Technical Support And Network
+                </target>
+            </trans-unit>
+
+            <trans-unit id="4">
+                <source>1year.gm</source>
+                <target>1 year as a web application developer and integrator web frontend and backend under Symfony.
+                        Also in charge of the helpdesk part and Actvie Directory management.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="5">
+                <source>1year.vtx</source>
+                <target>1 year as support Technical member in charge of helpdesk,
+                        hotline and internal network issues.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="6">
+                <source>ch</source>
+                <target>Switzerland
+                </target>
+            </trans-unit>
+
+            <trans-unit id="7">
+                <source>infos</source>
+                <target>about
+                </target>
+            </trans-unit>
+
+            <trans-unit id="8">
+                <source>experience</source>
+                <target>experience
+                </target>
+            </trans-unit>
+
+
+            <trans-unit id="9">
+                <source>education</source>
+                <target>education
+                </target>
+            </trans-unit>
+
+            <trans-unit id="10">
+                <source>skills</source>
+                <target>skills
+                </target>
+            </trans-unit>
+
+            <trans-unit id="11">
+                <source>hobby</source>
+                <target>hobbies
+                </target>
+            </trans-unit>
+
+            <trans-unit id="12">
+                <source>school</source>
+                <target>2 years of theoretical courses followed in "École des Arches"
+                </target>
+            </trans-unit>
+
+            <trans-unit id="13">
+                <source>school.bis</source>
+                <target>electronic section, Lausanne
+                </target>
+            </trans-unit>
+
+            <trans-unit id="14">
+                <source>school.rac</source>
+                <target>connection to "voie secondaire générale", Lausanne
+                </target>
+            </trans-unit>
+
+            <trans-unit id="15">
+                <source>prog.lang</source>
+                <target>programming languages &amp; cms
+                </target>
+            </trans-unit>
+
+            <trans-unit id="16">
+                <source>frame.tools</source>
+                <target>frameworks &amp; tools
+                </target>
+            </trans-unit>
+
+            <trans-unit id="17">
+                <source>plus</source>
+                <target>knowledges
+                </target>
+            </trans-unit>
+
+            <trans-unit id="18">
+                <source>win.unix</source>
+                <target>Mastering Linux and Windows Environments
+                </target>
+            </trans-unit>
+
+            <trans-unit id="19">
+                <source>integrator</source>
+                <target>Web integration of graphic models
+                </target>
+            </trans-unit>
+
+            <trans-unit id="20">
+                <source>responsive</source>
+                <target>Development of responsive smartphone, tablet and desktop design
+                </target>
+            </trans-unit>
+
+            <trans-unit id="21">
+                <source>aws</source>
+                <target>Knowledge of the Amazon Web Services infrastructure
+                </target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

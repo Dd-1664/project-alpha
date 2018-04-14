@@ -1,4 +1,4 @@
-FROM injah/php7.1:v1
+FROM injah/php7.1:win
 
 MAINTAINER injah
 
@@ -23,7 +23,7 @@ RUN /bin/bash -c 'cd /var/www/html/ && npm install'
 # Copy all the source (This will invalidate cache)
 COPY . /var/www/html/.
 
-RUN /bin/bash -c 'chmod +x /var/www/run-symfony.Unix.sh'
+RUN /bin/bash -c 'chmod +x /var/www/run-symfony.Win.sh'
 
 # remove pre-existing cache (cache folder is recreated in script run-symfony)
 RUN /bin/bash -c 'cd /var/www/html/ && rm -rf var/cache/'
@@ -42,7 +42,7 @@ RUN /bin/bash -c 'cd /var/www/html/ && php bin/console assets:install && rm -rf 
 EXPOSE 80
 
 # Need this to edit volumes on KiteMatic
-VOLUME /var/www/html
+VOLUME /var/www/html/
 
 # Run Symfony script
-CMD ["/bin/bash", "-c", "/var/www/run-symfony.Unix.sh"]
+CMD ["/bin/bash", "-c", "/var/www/run-symfony.Win.sh"]

@@ -1,24 +1,46 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Template Project{% endblock %}</title>
-        {% block stylesheets %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Resume">
+    <meta name="author" content="injah">
+    <title>{% block title %}Resume Project{% endblock %}</title>
+    {% block stylesheets %}
+        {# BOOTSTRAP #}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        {# CUSTOM CSS #}
+        <link rel="stylesheet" type="text/css" href="{{ asset("build/css/base.css") }}">
+        {# FONTS GOOGLE #}
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
 
-            {# BOOTSTRAP ALTERNATIVE #}
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-            {# SCSS #}
-            <link rel="stylesheet" type="text/css" href="{{ asset("build/css/style.css") }}">
-            {# FONT AWESOME #}
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        {# ICONS #}
+        <link rel="stylesheet" type="text/css" href="{{ asset("build/css/devicons.css") }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset("build/css/simple-line-icons.css") }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset("build/css/font-awesome.css") }}">
 
-        {% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-    <main class="container-fluid content">
-        {% block body %}{% endblock %}
-    </main>
-        {% block javascripts %}{% endblock %}
-    </body>
+    {% endblock %}
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body id="page-top">
+{% block body %}
+{% endblock %}
+
+{% block javascripts %}
+    {# JQUERY #}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    {# BOOTSTRAP #}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    {# CUSTOM JS #}
+    <script src="{{ asset("build/js/app.js") }}"></script>
+{% endblock %}
+</body>
 </html>

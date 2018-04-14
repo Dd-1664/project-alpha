@@ -17,7 +17,10 @@ Encore
     .enableSassLoader().autoProvidejQuery()
 
     //Ici on ajoute un thème si il y en a un nouveau
-    .addStyleEntry('css/style', './assets/scss/style.scss')
+    .addStyleEntry('css/base', './assets/scss/base.scss')
+    .addStyleEntry('css/devicons', './web/icons/devicons/css/devicons.scss')
+    .addStyleEntry('css/simple-line-icons', './web/icons/simple-line-icons/scss/simple-line-icons.scss')
+    .addStyleEntry('css/font-awesome', './web/icons/font-awesome/scss/font-awesome.scss')
     .enableReactPreset()
     .enableSourceMaps(!Encore.isProduction());
 

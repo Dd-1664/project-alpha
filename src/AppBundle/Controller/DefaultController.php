@@ -7,8 +7,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
+//    TODO: SET DEFAULT URL
     /**
-     * @Route("/", name="homepage")
+     * @Route("/{_locale}/", name="homepage")
      */
     public function indexAction()
     {

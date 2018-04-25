@@ -4,7 +4,7 @@
         <body>
             <trans-unit id="1">
                 <source>text.resume</source>
-                <target>Autodidacte, Franc et Réfléchi. Je suis un jeune developpeur web principalement sur le framework Symfony. Je souhaite me specialiser dans le frontend design.
+                <target>Autodidacte, Franc, Réfléchi.
                 </target>
             </trans-unit>
 
@@ -22,8 +22,8 @@
 
             <trans-unit id="4">
                 <source>1year.gm</source>
-                <target>1 année passé en tant que developeur d'applications web et integrateur web frontend et backend sous Symfony.
-                        Egalement en charge de la partie helpdesk et gestion Actvie Directory.
+                <target>1 année passé en tant que developeur d'applications web et intégrateur web frontend et backend sous Symfony.
+                        Également en charge de la partie helpdesk et gestion de la partie Active Directory.
                 </target>
             </trans-unit>
 
@@ -31,7 +31,7 @@
                 <source>1year.vtx</source>
                 <target>1 année passé en tant que membre du support technique.
                         Principalement en charge de la partie Helpdesk,
-                        Hotline technique et gestion des pannes réseau.
+                        Hotline technique, gestion des pannes réseau et de la partie Active Directory.
                 </target>
             </trans-unit>
 
@@ -83,6 +83,12 @@
                 </target>
             </trans-unit>
 
+            <trans-unit id="13bis">
+                <source>high.school</source>
+                <target>école secondaire -
+                </target>
+            </trans-unit>
+
             <trans-unit id="14">
                 <source>school.rac</source>
                 <target>raccordement voie secondaire générale, Lausanne
@@ -128,6 +134,21 @@
             <trans-unit id="21">
                 <source>aws</source>
                 <target>Connaissance de l'infrastructure Amazon Web Services
+                </target>
+            </trans-unit>
+
+            <trans-unit id="22">
+                <source>hobby.text</source>
+                <target>En tant que jeune developpeur web, je suis principalement interressé par tous ce qui touche
+                        aux nouvelles technologies, ayant recement decouvert docker,
+                        je me suis lancé dans un projet d'adaptation de site existants sous conteneurs docker.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="23">
+                <source>hobby.text2</source>
+                <target>Dans mon temps libre, j'aime regarder des films et des series de science-fiction,
+                        jouer à des jeux videos ou encore pratiquer le ski et le vélo
                 </target>
             </trans-unit>
         </body>

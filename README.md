@@ -2,9 +2,6 @@ CV Project
 ==========
 
 # TODO:
-
-* Use CDN for profile img
-
 * USE GLITCH EFFECT & OTHER CSS EFFECTS <https://tympanus.net/codrops/>;
 
 # Lancer Docker 

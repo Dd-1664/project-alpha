@@ -1,8 +1,8 @@
 CV Project
 ==========
 
-# TODO:
-* USE GLITCH EFFECT & OTHER CSS EFFECTS <https://tympanus.net/codrops/>;
+<https://dd-resume.000webhostapp.com/>
+
 
 # Lancer Docker 
 Build l'image du projet et utiliser Kitematic (Docker GUI):
@@ -15,6 +15,9 @@ Build l'image du projet et utiliser Kitematic (Docker GUI):
  -p 8080:80
  --name [NAME] [NAME]
 
+# Copie
+
+`docker cp -a [CONTAINER NAME]:var/www/html/ [LOCAL FOLDER]`
 
 # COMMAND:
 `composer install`
@@ -25,9 +28,9 @@ Build l'image du projet et utiliser Kitematic (Docker GUI):
 EXEMPLE DOS
 ========
 
-* `docker build -t cv .`
-* `docker run -p 8080:80 -v $(pwd):/var/www/html --name cv cv` 
-* Access <http://localhost:8080/app_dev.php>
+`docker build -t cv .`
+`docker run -p 8080:80 -v $(pwd):/var/www/html --name cv cv` 
+Access <http://localhost:8080/app_dev.php>
 
 ==============
 

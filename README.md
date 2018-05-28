@@ -1,7 +1,7 @@
 CV Project
 ==========
 
-<https://dd-resume.000webhostapp.com/>
+<http://resume-dd.herokuapp.com/fr/>
 
 
 # Lancer Docker 
